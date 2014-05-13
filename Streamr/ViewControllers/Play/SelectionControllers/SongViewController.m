@@ -112,16 +112,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [[PlayViewController musicPlayer] setQueueWithItemCollection:[MPMediaItemCollection collectionWithItems:self.collections]];
+    [[PlayViewController sharedMusicPlayer] setQueueWithItemCollection:[MPMediaItemCollection collectionWithItems:self.collections]];
     
     if([[self.collections objectAtIndex:0] isKindOfClass:[MPMediaItem class]]){
-        [[PlayViewController musicPlayer] setNowPlayingItem: [self.collections objectAtIndex:indexPath.row]];
+        [[PlayViewController sharedMusicPlayer] setNowPlayingItem: [self.collections objectAtIndex:indexPath.row]];
     }
     else {
-        [PlayViewController musicPlayer].nowPlayingItem = [[[self.collections objectAtIndex:indexPath.section] items] objectAtIndex:indexPath.row ];
+        [PlayViewController sharedMusicPlayer].nowPlayingItem = [[[self.collections objectAtIndex:indexPath.section] items] objectAtIndex:indexPath.row ];
     }
     
-    [[PlayViewController musicPlayer] play];
+    [[PlayViewController sharedMusicPlayer] play];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

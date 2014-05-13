@@ -11,6 +11,6 @@
 
 @interface PlayViewController : UIViewController
 
-+(MPMusicPlayerController*) musicPlayer;
++(MPMusicPlayerController*) sharedMusicPlayer;
 
 @end

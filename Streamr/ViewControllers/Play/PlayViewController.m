@@ -30,7 +30,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.music = [MPMusicPlayerController applicationMusicPlayer];
+        self.music = [PlayViewController sharedMusicPlayer];
         
         [self.music setQueueWithQuery:[[SharedQuery sharedQuery] query]];
         MPMediaItem* item = [self.music nowPlayingItem];
@@ -62,11 +62,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-+(MPMusicPlayerController*)musicPlayer
-{
-    return self.music;
++ (id)sharedMusicPlayer {
+    static MPMusicPlayerController *sharedPlayer = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedPlayer = [[self alloc] init];
+    });
+    return sharedPlayer;
 }
-
 
 -(IBAction)onBtnPlay:(id) sender
 {
