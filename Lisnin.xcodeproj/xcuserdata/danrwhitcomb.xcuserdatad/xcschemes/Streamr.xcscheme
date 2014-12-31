@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3987E4C7191F118400F52B3B"
-               BuildableName = "Streamr.app"
-               BlueprintName = "Streamr"
-               ReferencedContainer = "container:Streamr.xcodeproj">
+               BuildableName = "Pathos.app"
+               BlueprintName = "Pathos"
+               ReferencedContainer = "container:Pathos.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3987E4E8191F118400F52B3B"
-               BuildableName = "StreamrTests.xctest"
-               BlueprintName = "StreamrTests"
-               ReferencedContainer = "container:Streamr.xcodeproj">
+               BuildableName = "PathosTests.xctest"
+               BlueprintName = "PathosTests"
+               ReferencedContainer = "container:Pathos.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3987E4C7191F118400F52B3B"
-            BuildableName = "Streamr.app"
-            BlueprintName = "Streamr"
-            ReferencedContainer = "container:Streamr.xcodeproj">
+            BuildableName = "Lisnin.app"
+            BlueprintName = "Lisnin"
+            ReferencedContainer = "container:Lisnin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3987E4C7191F118400F52B3B"
-            BuildableName = "Streamr.app"
-            BlueprintName = "Streamr"
-            ReferencedContainer = "container:Streamr.xcodeproj">
+            BuildableName = "Lisnin.app"
+            BlueprintName = "Lisnin"
+            ReferencedContainer = "container:Lisnin.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3987E4C7191F118400F52B3B"
-            BuildableName = "Streamr.app"
-            BlueprintName = "Streamr"
-            ReferencedContainer = "container:Streamr.xcodeproj">
+            BuildableName = "Pathos.app"
+            BlueprintName = "Pathos"
+            ReferencedContainer = "container:Pathos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
