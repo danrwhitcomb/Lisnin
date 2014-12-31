@@ -1,0 +1,5 @@
+#include "Pods-MSSlidingPanelController.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/MSSlidingPanelController" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/MSSlidingPanelController" "${PODS_ROOT}/Headers/SVProgressHUD"
+OTHER_LDFLAGS = -ObjC ${PODS_MSSLIDINGPANELCONTROLLER_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}
